@@ -1,0 +1,363 @@
+/* Css reset */
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+
+*::after{
+    box-sizing: border-box;
+}
+
+*::before{
+    box-sizing: border-box;
+}
+
+body, html {
+   
+    height: 100%;
+    line-height: 1.5;
+    background-color: var(--main-bg);
+    /* font-size: 12px; */
+   
+}
+
+label{
+    display: block;
+}
+
+picture, svg, img, video{
+    display: block;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    overflow-wrap: break-word;
+}
+
+/* Css Custom (Variable)*/
+
+:root{
+    /*bg color */
+    --main-bg:  #F7FDFC;
+    --form-bg: #FFFFFF;
+    --btn-bg: #2EC4B6;
+
+    /* Font family */
+    --main-ff: 'Simonetta', serif;
+    --form--ff: 'Sofia Sans', sans-serif;
+
+    /* font-size */
+    --main-fs: 1.87rem;
+    --sbumain-fs: .89rem;
+
+   
+    /*f Font size form*/
+    --form-size: 0.875rem;
+    --form-fw: 600;
+
+    /* font weight */
+    --main-fw: 600;
+    --submain-fw: 300;
+
+    /* font color */
+    --submain-color:#737373;
+
+    /* footer */
+    --footer-fw: 500;
+    --fstrong-fw: 400;
+    --footer-ff: 'Sofia Sans';
+    --footer-align: center;
+    --footer-color: #000000;
+    --fsize: 0.875rem
+
+}
+
+/* Design mobile view first */
+
+.container {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    
+      
+}
+
+
+header{
+    padding-top: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.logo{
+    width: 20%;
+    height: 45px;
+    
+}
+
+ header h1{
+    margin-top: 10px;
+    font-family: var(--main-ff);
+    font-weight: var(--main-fw);
+    font-size: var(--main-fs);
+}
+
+.hide-text{
+    display: block;
+   
+   }
+   .mobil-view{
+   display: none;
+   }
+
+header p{
+    font-family: var(--main-ff);
+    font-size: var(--sbumain-fs);
+    font-weight: var(--submain-fw);
+    color: var(--submain-color);
+}
+
+
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+#form{
+    background-color: var(--form-bg);
+    max-width: 300px;
+    height: 800px;
+    margin-top: 35px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    /* margin-left: 15px;
+    margin-right: 15px; */
+}
+
+input , select{
+    width: 100%;
+    max-width: 295px;
+    height: 48px;
+    border: 1.5px solid grey;
+    outline: none;
+      }
+    
+label{
+    font-family: var(--form--ff);
+    font-size: var(--form-size);
+    font-weight: var(--form-fw);
+}
+
+input:hover{
+    border: 2px solid #2EC4B6;
+}
+
+select:hover{
+    border: 2px solid #2EC4B6;
+}
+
+  #fName{
+    box-shadow: 0 0 3px rgba(43, 253, 236, 0.6);
+    outline: none;
+    margin-bottom: 15px;
+    }
+    
+    label{
+        margin-top: 15px;
+    }
+
+    .user-icon{
+        position: relative;
+    }
+    .user-icon input{
+        padding-left: 40px;
+        box-sizing: border-box;
+    }
+
+    .user-icon i{
+        position: absolute;
+        right: 10px;
+        top: 60%;
+        color: #ccc;
+    }
+
+    button{
+        background-color: var(--btn-bg);
+        margin-top: 25px;
+        width: 100%;
+        max-width: 295px;
+        height: 48px;
+        outline-color: blue;
+        border: none;
+        color: white;
+        font-family: var(--form--ff);
+        font-weight: var(--form-fw);
+        font-size: var(--form-size);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        margin-bottom: 45px;
+    }
+
+    footer{
+         margin-left: 15px;
+        margin-right: 15px;
+    }
+    footer p{
+        text-align: var(--footer-align);
+        font-size: var(--fsize);
+        color: var(--footer-color);
+        font-weight: var(--footer-fw);
+    }
+
+    footer strong{
+        color: var(--btn-bg);
+        font-weight: var(--fstrong-fw);
+    }
+
+    @media (min-width:450px){
+            .container {
+            width: 90%;
+            max-width: 1440px;
+            height: 600px;
+           margin: 0 auto;
+            display: flex;
+          justify-content: space-between;
+           margin-top: 50px;
+           padding: 50px;
+           background-color: var(--main-bg);
+         
+    }
+
+    body, 
+    html{
+        font-size: 16px;
+        background-color: rgb(155, 154, 154);
+    }
+
+    :root{
+        --main-fs-dv: 2.3rem;
+        --submain--fs-dv: 1rem;
+        --main-fw-dv: 700;
+        --submain-fw-dv: 400;
+    }
+
+    header{
+        padding-top: 200px;
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 400px;
+    }
+    .logo{
+        width: 77.7px;
+        height: 80px;
+        
+       }
+
+       header h1{
+        font-size: var(--main-fs-dv);
+        font-weight: var(--main-fw-dv)
+       }
+
+       .hide-text{
+        display: none;
+       
+       }
+       .mobil-view{
+       display: block;
+       }
+
+    header p{
+        font-size: var(--submain--fs-dv);
+        font-weight: var(--submain-fw-dv);
+    }
+
+    #form{
+        background-color: var(--form-bg);
+        max-width: 580px;
+        width: 50%;
+       height: 579px;
+        margin-top: 10px;
+        border-radius: 6px;
+        padding-top: 30px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+       
+        }
+
+
+
+.form-row{
+         display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+       
+}
+
+.row-group{
+    flex:  1;
+    margin-right: 10px;
+    box-sizing: border-box;
+    
+}
+
+label{
+    display: block;
+    margin-top: 0px;
+}
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    margin-right: 50px;
+}
+
+
+.pwd {
+   max-width: 95%;
+  }
+.col-1{
+    max-width: 90%;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.user-icon{
+    position: relative;
+}
+
+.user-icon i{
+    position: absolute;
+    right: 40px;
+    top: 45%;
+    color: #ccc;
+}
+
+button{
+    
+    margin-top: 15px;
+   
+    margin-bottom: 20px;
+}
+    }
+    .right button {
+        width: 100%;
+        padding: 2%;
+        background: #2ec4b6;
+        margin: 2%;
+        color: white;
+        font-size: 18px;
+        border: none;
+      }
+      .right p {
+        width: 100%;
+        font-size: 18px;
+        margin-left: 10%;
+      }
+      .right p a {
+        color: #2ec4b6;
+      }
